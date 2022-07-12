@@ -1,0 +1,58 @@
+.commonTable {
+  & :global .ant-table-pagination {
+    width: 100%;
+    overflow: hidden;
+    text-align: right;
+  }
+  & :global .ant-pagination-total-text {
+    width: 100%;
+    margin-right: -290px;
+    margin-left: -100%;
+    text-align: right;
+  }
+
+  .react-resizable {
+    position: relative;
+    background-clip: padding-box;
+  }
+
+  .react-resizable-handle {
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    z-index: 1;
+    width: 10px;
+    height: 100%;
+    cursor: col-resize;
+  }
+  .tableHeaderBar {
+    margin-bottom: 16px;
+  }
+
+  .ant-table-thead {
+    .ant-table-cell-ellipsis {
+      overflow: auto !important;
+      white-space: normal !important;
+      text-overflow: normal !important;
+      word-break: break-all;
+    }
+  }
+}
+.paginationElement {
+  width: 100%;
+  text-align: left;
+
+  .msgVal {
+    margin-right: 10px;
+  }
+}
+
+.draggable-tree {
+  .ant-tree-switcher {
+    display: none;
+  }
+}
+
+.ant-table-tbody > tr .ant-table-wrapper:only-child .ant-table td {
+  background: #fff;
+}

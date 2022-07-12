@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "yp-frontend-library": ["src/index.ts"],
+      "@src/*": ["src/*"],
+      "@utils/*": ["utils/*"],
+      "hooks/*": ["src/hooks/*"],
+      "@typings": ["typings"]
+    },
+    "target": "esnext",
+    "module": "commonjs",
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": "lib",
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src", "hooks"],
+  "exclude": ["node_modules", "src/**/__tests__"]
+}
